@@ -1,0 +1,82 @@
+1) Sign In with email
+acceptance criteria - 
+1. sign in link sould be present on UI and it's clickable.
+2. after clicking on sign in pop-up should open contains emai filed to enter email address.
+3. after enterging email and click submit it should show success or fail message.
+
+steps -
+1. user enter url "https://qa-challenge-tabeo.vercel.app/"
+2. user click on sign in link.
+3. user enter valid email id in email box.
+4. after clicking on submit success pop-up should appear.
+
+expected result -
+1. valid link should revided on provided email id.
+
+2) Sign In with Google Auth
+acceptance criteria - 
+1. sign in link sould be present on UI and it's clickable.
+2. after clicking on sign in pop-up should open contains sign-in with google.
+3. after clicking on sign-in with google email text-box should present to enter email id.
+4. after entering email and click submit success/fail message should be displayed.
+
+steps -
+1. user enter url "https://qa-challenge-tabeo.vercel.app/"
+2. user click on sign in link.
+3. user click on sign-in with google.
+4. user enter valid email and click sign-in with email.
+
+expected result -
+1. valid link should revided on provided email id.
+
+3) Pay 20 pound per month
+acceptance criteria - 
+1. after clicking on sign-in link pay 20 pound/mo button should present.
+2. after clicking on 20 pound/mo form should open with credit card details to enter.
+3. after submitting credit card form 3D auth pop-up should open.
+
+steps -
+1. user click on sign-in link from email.
+2. user click on 20 pound/mo button.
+3. user enter all valid details for credit card.
+4. after clicking on submit success pop-up should appear.
+
+expected result -
+1. valid link should revided on provided email id.
+2. after submitting all valid credit card details suucess pop-up should appear.
+
+4) Pay 220 pound per year
+acceptance criteria - 
+1. after clicking on sign-in link pay 20 pound/mo button should present.
+2. after clicking on 220 pound year form should open with credit card details to enter.
+3. after submitting credit card form 3D auth pop-up should open.
+
+steps -
+1. user click on sign-in link from email.
+2. user click on 220 pound button.
+3. user enter all valid details for credit card.
+4. after clicking on submit success pop-up should appear.
+
+expected result -
+1. valid link should redirected on provided email id.
+2. after submitting all valid credit card details suucess pop-up should appear.
+
+Corner tests -
+1.verify for different cards (visa/master/american express etc)
+2. check for diffrent countries with different payment card combinations.
+3. test e2e flow with different browsers/devices/screen resolutions etc
+
+Negative tests -
+1. test for different credit card numbers (negative number/alphabets/special characters etc)
+2. check for different cvc numbers (negative number/alphabets/special characters etc)
+3. check for mandatory field validations.
+4. enter different name + credit card combination.
+5. enter all valid credit card details and close the browser session or disconnect internet.
+6. enter all valid credit card details and press browser back button and verify UI saves information.
+7. verify refund option once user pay the bill.
+
+Visual tests -
+1. verify all icons/text/colors are correct according to device/browsers etc.
+
+Stress/load tests -
+1.Perform load/stress test by virtually access payment details page/checkout page at the same time.
